@@ -39,8 +39,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun addModelToScence(anchor: Anchor, it: ModelRenderable?) {
-        val anchorNode : AnchorNode = AnchorNode(anchor)
-        val transform : TransformableNode = TransformableNode(arFragment.transformationSystem)
+        val anchorNode = AnchorNode(anchor)
+        val transform = TransformableNode(arFragment.transformationSystem)
         transform.setParent(anchorNode)
         transform.renderable = it
         arFragment.arSceneView.scene.addChild(anchorNode)
